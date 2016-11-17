@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">LearnComponents</string>
+    <string name="large_text">世界上最大的海洋是什么？</string>
+    <string name="option_a">A.太平洋</string>
+    <string name="option_b">B.印度洋</string>
+    <string name="option_c">C.大西洋</string>
+    <string name="option_d">D.北冰洋</string>
+    <string name="submit">提交</string>
+    <string name="ques">你喜欢吃哪些食物？</string>
+    <string name="option1">苹果</string>
+    <string name="option2">桔子</string>
+    <string name="option3">香蕉</string>
+    <string name="option4">西瓜</string>
+</resources>
