@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jikexueyuan.learnintent">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MyAty"
+            android:label="MyAty">
+            //是否能导出 默认true 可以被外界访问 设置false 则不能被外界访问 仅能在同一个project 这里就是不能被外界App打开
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+                //默认行为方式是Activity ** .DEFAULT必须大写!!!!!!!!!!!!************
+                <action android:name="com.jikexueyuan.learnintent.intent.action.MyAty" />
+                //任意字符串
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MyAty1"
+            android:label="MyAty1">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+                <action android:name="com.jikexueyuan.learnintent.intent.action.MyAty" />
+                <data   android:scheme="app"/>
+                // data 过滤器选项      scheme 协议啥的
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
